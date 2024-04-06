@@ -9,7 +9,7 @@
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/aleho84/cloud-run-test)]()
-[![Version](https://img.shields.io/github/package-json/v/alehodev/aleho-bot)]()
+[![Version](https://img.shields.io/github/package-json/v/aleho84/cloud-run-test)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 </div>
