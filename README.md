@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=200px src="https://cdn.icon-icons.com/icons2/2699/PNG/512/google_cloud_run_logo_icon_168148.png" alt="logo"></a>
 </p>
 
 <h3 align="center">cloud-run-test</h3>
@@ -8,107 +8,73 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/aleho84/cloud-run-test)]()
+[![Version](https://img.shields.io/github/package-json/v/alehodev/aleho-bot)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Simple example to deploy an Endpoint in Google Cloud
     <br> 
 </p>
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [📝 Table of Contents](#-table-of-contents)
+- [🧐 About ](#-about-)
+- [🏁 Getting Started ](#-getting-started-)
+- [🚀 Deployment ](#-deployment-)
+- [⛏️ Built Using ](#️-built-using-)
+- [✍️ Authors ](#️-authors-)
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+This repository shows how to make a simple endpoint deployment done in nodejs and express by creating and using 'secrets' to store environment variables.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+1.  [Install the Google Cloud SDK](https://cloud.google.com/sdk/?hl=es).
+1.  Acquire local credentials for authenticating with Google Cloud Platform APIs:
 
-### Prerequisites
+        gcloud auth application-default login
 
-What things you need to install the software and how to install them.
+1.  Clone this repo:
 
-```
-Give examples
-```
+        git clone https://github.com/Aleho84/cloud-run-test.git
 
-### Installing
+1.  Install dependencies:
 
-A step by step series of examples that tell you how to get a development env running.
+        npm install
 
-Say what the step will be
+1.  Run the sample with `npm` 
 
-```
-Give the example
-```
+        npm start
 
-And repeat
 
-```
-until finished
-```
+1.  Visit the application at http://localhost:8080.
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-Add additional notes about how to deploy this on a live system.
+To deploy a sample application:
+
+1.  Use the [Google Cloud Console](https://console.cloud.google.com/) to create a Google Cloud Platform
+    project.
+1.  [Enable billing](https://support.google.com/cloud/answer/6293499#enable-billing) for your project.
+
+1.  Use the Cloud SDK to deploy your app.
+
+        gcloud app deploy
+
+1.  View your deployed application at `https://YOUR_PROJECT_ID.appspot.com`.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Express](https://expressjs.com/) - Server Framework
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [@aleho84](https://github.com/aleho84) - Idea & Initial work

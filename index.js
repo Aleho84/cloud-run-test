@@ -24,7 +24,7 @@ app.listen(port, () => {
 async function createAndAccessSecret() {
   // Create the secret with automation replication.
 
-  const parent = 'projects/28356368051' // Project for which to manage secrets.
+  const parent = 'projects/253806235088' // Project for which to manage secrets.
   const secretId = 'foo' // Secret ID.
   const payload = 'hello world!' // String source data.
 
@@ -64,7 +64,7 @@ async function accessSecret() {
   try {
     // Access the secret.
     const [accessResponse] = await client.accessSecretVersion({
-      name: 'projects/28356368051/secrets/secret-test/versions/1',
+      name: 'projects/253806235088/secrets/foo/versions/1',
     });
 
     const responsePayload = accessResponse.payload.data.toString('utf8');
@@ -77,5 +77,5 @@ async function accessSecret() {
   }
 }
 
-// createAndAccessSecret();
+createAndAccessSecret();
 accessSecret();
